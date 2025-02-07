@@ -22,7 +22,7 @@ CYAN='\033[0;36m'
 
 NC='\033[0m' #No Colour
 
-RSYNC_VERSION=v3.3.0
+RSYNC_VERSION=v3.4.1
 
 # Script header
 echo -e "${GREYB}Rsync for ESXi static binary compiler."
@@ -66,7 +66,7 @@ git checkout $RSYNC_VERSION
 
 cd ~/rsync
 LIBS="-ldl" ./configure
-make -B CFLAGS="-static"
+make -B CFLAGS="-std=c99 -static"
 
 echo -e "${LYELLOW}If build was successful, below output should state: 'not a dynamic executable'...${LGREEN}"
 ldd $(pwd)/rsync || true
