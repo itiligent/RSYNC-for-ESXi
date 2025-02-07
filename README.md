@@ -2,7 +2,7 @@
 ### Build scripts for compiling rsync for use with VMware ESXi
 Rsync is a mature Linux staple for reliably replicating files over imperfect or lower speed links. For data migration it is particularly useful for keeping track of data changes between systems during a staged cutover, but it is equally useful as a backup and disaster recovery tool.
 
-If you dont want to build your own, a prebuilt rsync executable is available here: [rsync v3.2.7 for ESXi](https://github.com/itiligent/RSYNC-for-ESXi/raw/main/rsync)
+If you dont want to build your own (and you trust this repo), a prebuilt rsync executable is available here: [rsync v3.4.1 for ESXi](https://github.com/itiligent/RSYNC-for-ESXi/raw/main/rsync)
 
 ## Compile rsync with Centos 7 or Docker
 You will need either:
