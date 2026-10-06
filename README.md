@@ -46,7 +46,15 @@ All build files are created in `$HOME/build-static`
    ```bash
    esxcli system settings advanced set -o /User/execInstalledOnly -i 0
    ```
-5. Configure destination **RSA or EdDSA SSH keys** for passwordless host-to-host authentication.
+
+5. Enable the ssh service and change the Esxi firewall to permit sshClient connections:
+   ```bash
+   vim-cmd hostsvc/enable_ssh
+   vim-cmd hostsvc/start_ssh
+   esxcli network firewall ruleset set --ruleset-id=sshClient --enabled=true
+   ```
+   
+6. Configure destination **RSA or EdDSA SSH keys** for passwordless host-to-host authentication.
 
 ---
 
