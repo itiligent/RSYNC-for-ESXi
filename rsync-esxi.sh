@@ -24,14 +24,14 @@
 
 # ------------------------- Edit these settings -------------------------
 LOCAL_DIR="${LOCAL_DIR:-/vmfs/volumes/Datastore1/Backup/}"
-REMOTE_DIR="${REMOTE_DIR:-/media/david/2TB_NVME/Esxi2_Backup/}"
-REMOTE_HOST="${REMOTE_HOST:-root@172.17.9.65}"
+REMOTE_DIR="${REMOTE_DIR:-/path/to/remote/Backup/}"
+REMOTE_HOST="${REMOTE_HOST:-root@192.168.1.10}"
 SSH_KEY="${SSH_KEY:-/vmfs/volumes/Datastore1/privkey}"
 SSH_PORT="${SSH_PORT:-22}"
-SSH_BIN="${SSH_BIN:-ssh}"            # May be an explicit local SSH executable.
+SSH_BIN="${SSH_BIN:-ssh}"            
 
 LOCAL_RSYNC_BIN="${LOCAL_RSYNC_BIN:-/vmfs/volumes/Datastore1/rsync}"
-REMOTE_RSYNC_BIN="${REMOTE_RSYNC_BIN:-/usr/bin/rsync}"  # Native Linux rsync.
+REMOTE_RSYNC_BIN="${REMOTE_RSYNC_BIN:-/usr/bin/rsync}"  # Native rsync path | another path to a copy of the Esxi binary
 EXCLUDE_FILE="${EXCLUDE_FILE-/vmfs/volumes/Datastore1/rsync_excludes.txt}"
 LOG_DIR="${LOG_DIR:-/vmfs/volumes/Datastore1/rsync_logs}"
 
