@@ -60,7 +60,7 @@ All build files are created in `$HOME/build-static`
 
 ### 💻 Companion Host-2-Host Robust Replication Script
 
-[This replication script](https://raw.githubusercontent.com/itiligent/RSYNC-ESXi/refs/heads/main/rsync-host-2-host.sh) is written in **POSIX-compliant shell** and supports replication between ESXi, BusyBox, and GNU/Linux systems.
+[This replication script](https://raw.githubusercontent.com/itiligent/RSYNC-for-ESXi/refs/heads/main/rsync-esxi.sh) is written in **POSIX-compliant shell** and supports replication between ESXi, BusyBox, and GNU/Linux systems.
 
 The script provides:
 
