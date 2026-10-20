@@ -1,5 +1,5 @@
 #!/bin/sh
-# SSH backups: ESXi / Linux / OpenWrt (OpenSSH or Dropbear). Working resume!!!!!!
+# SSH backups: ESXi / Linux / OpenWrt (OpenSSH or Dropbear).
 # Includes portable executable lookup and skipped SSH fingerprint checks.
 # PUSH: LOCAL_DIR -> REMOTE_DIR. PULL: REMOTE_DIR -> LOCAL_DIR.
 # Both paths are directories; their contents are copied. Use separate filesystems.
